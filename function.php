@@ -22,15 +22,12 @@ function getIntWord(int $number, string $form1, string $form2, string $form3): s
     if (5 <= $lastDigit && $lastDigit <= 9) {
         return $number . ' ' . $form3;
     }
-
     if (2 <= $lastDigit && $lastDigit <= 4) {
         return $number . ' ' . $form2;
     }
-
     if ($lastDigit == 0) {
         return $number . ' ' . $form3;
     }
-
     if ($lastDigit == 1) {
         return $number . ' ' . $form1;
     }
